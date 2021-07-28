@@ -1,0 +1,12 @@
+{
+  "extends": ["config:base"],
+  "labels": ["dependencies"],
+  "prConcurrentLimit": 5,
+  "prCreation": "not-pending",
+  "reviewers": ["@pukafever"],
+  "schedule": ["before 8am on Saturday"],
+  "vulnerabilityAlerts": {
+    "labels": ["security"],
+    "assignees": ["@pukafever"]
+  }
+}

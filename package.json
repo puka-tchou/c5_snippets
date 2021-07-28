@@ -17,10 +17,6 @@
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
-			{
-				"command": "concrete5-helper.helloWorld",
-				"title": "Hello World"
-			}
 		],
 		"snippets": [
 			{

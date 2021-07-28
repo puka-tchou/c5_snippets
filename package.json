@@ -28,6 +28,10 @@
             }
         ]
     },
+    "icon": "src/images/logo.png",
+    "repository": {
+        "url": "https://github.com/pukafever/c5_snippets"
+    },
     "scripts": {
         "compile": "tsc -p ./",
         "format": "prettier --write {snippets,src}/**/*",

@@ -1,0 +1,53 @@
+{
+	"New area" : {
+		"prefix": "c5area",
+		"body": [
+			"\\$${1:contenu} = new Area('${2:contenu}');",
+			"\\$${1:contenu}->setAreaGridMaximumColumns(${3:12});",
+			"\\$${1:contenu}->display(\\$c);"
+		],
+		"description": "Create a new area"
+	},
+
+	"New Global area" : {
+		"prefix": "c5globalarea",
+		"body": [
+			"\\$${1:contenu} = new GlobalArea('${2:contenu}');",
+			"\\$${1:contenu}->setAreaGridMaximumColumns(${3:12});",
+			"\\$${1:contenu}->display(\\$c);"
+		],
+		"description": "Create a new global area"
+	},
+
+	"New translation": {
+		"prefix": "c5translation",
+		"body": [
+			"t('$1')$0"
+		],
+		"description": "Create a new translation"
+	},
+
+	"Get attribute from page": {
+		"prefix": "c5getattribute",
+		"body": [
+			"${1|$this->c,$c|}->getAttribute('$2')$0"
+		],
+		"description": "Get attribute from page"
+	},
+
+	"helper date": {
+		"prefix": "c5helper",
+		"body": [
+			"\\$dh = Core::make('helper/${1:text}');$0"
+		],
+		"description": "Create a date helper"
+	},
+
+	"format date": {
+		"prefix": "c5customdate",
+		"body": [
+			"\\$dh->formatCustom('j F Y', $1);$0"
+		],
+		"description": "Format date"
+	}
+}

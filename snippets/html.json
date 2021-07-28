@@ -1,0 +1,67 @@
+{
+	"New area" : {
+		"prefix": "c5area",
+		"body": [
+			"<?php",
+			"\\$${1:contenu} = new Area('${2:contenu}');",
+			"\\$${1:contenu}->setAreaGridMaximumColumns(12);",
+			"\\$${1:contenu}->display(\\$c);",
+			"?>"
+		],
+		"description": "Create a new area"
+	},
+
+	"New Global area" : {
+		"prefix": "c5globalarea",
+		"body": [
+			"<?php",
+			"\\$${1:contenu} = new GlobalArea('${2:contenu}');",
+			"\\$${1:contenu}->setAreaGridMaximumColumns(12});",
+			"\\$${1:contenu}->display(\\$c);",
+			"?>"
+		],
+		"description": "Create a new global area"
+	},
+
+	"New translation": {
+		"prefix": "c5translation",
+		"body": [
+			"<?= t('$1'); ?>$0"
+		],
+		"description": "Create a new translation"
+	},
+
+	"Get attribute from page": {
+		"prefix": "c5getattribute",
+		"body": [
+			"<?= \\$c->getAttribute('$1'); ?>$0"
+		],
+		"description": "Get attribute from page"
+	},
+
+	"Inject php value into html": {
+		"prefix": "?=",
+		"body": [
+			"<?= $1;?>$0"
+		],
+		"description": "Inject php value into html"
+	},
+
+	"PHP test": {
+		"prefix": "?if",
+		"body": [
+			"<?php if($1):?>",
+			"$2",
+			"<?php endif; ?>"
+		],
+		"description": "display html on php condition"
+	},
+
+	"Concrete Active language": {
+		"prefix": "c5lang",
+		"body": [
+			"<?= \\Concrete\\Core\\Localization\\Localization::activeLanguage(); ?>"
+		],
+		"description": "Get the active language"
+	}
+}

@@ -12,7 +12,7 @@
   },
 
   "New Global area": {
-    "prefix": "c5globalarea",
+    "prefix": "c5areaglobal",
     "body": [
       "<?php",
       "\\$${1:contenu} = new GlobalArea('${2:contenu}');",
@@ -53,5 +53,17 @@
       "<?= \\Concrete\\Core\\Localization\\Localization::activeLanguage(); ?>"
     ],
     "description": "Get the active language"
+  },
+
+  "New include": {
+    "prefix": "c5include",
+    "body": ["<?php \\$view->inc('${1:includes/}') ?>"],
+    "description": "Include a file"
+  },
+
+  "Get theme path": {
+    "prefix": "c5theme",
+    "body": ["<?= \\$view->getThemePath() ?>"],
+    "description": "Include a file"
   }
 }

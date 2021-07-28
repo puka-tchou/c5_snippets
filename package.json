@@ -1,7 +1,7 @@
 {
-    "name": "concrete5-helper",
-    "displayName": "Concrete5 Helper",
-    "description": "Extension d'aide au développement sur concrete5",
+    "name": "concrete5-snippets",
+    "displayName": "Concrete5 snippets",
+    "description": "Concrete5 snippets",
     "publisher": "joeyjeantet",
     "version": "0.0.1",
     "engines": {
@@ -28,7 +28,7 @@
             }
         ]
     },
-    "icon": "src/images/logo.png",
+    "icon": "images/icon.png",
     "repository": {
         "url": "https://github.com/pukafever/c5_snippets"
     },

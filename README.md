@@ -6,7 +6,7 @@ _Finally, Concrete5 snippets for VSCode!_
 
 This extension adds a number of concrete5 snippets to VSCode. The snippets all start with **c5** and work as soon as VSCode detects that the language used is HTML or PHP.
 
-It is also possible to generate single page and page type controllers by right clicking on the folders public/application/controllers/single_page and public/application/controllers/page_types
+It is also possible to generate single page and page type controllers by right clicking on the folders `public/application/controllers/single_page` and `public/application/controllers/page_types`.
 
 ## Snippets
 

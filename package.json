@@ -4,6 +4,7 @@
   "description": "Concrete5 snippets",
   "publisher": "joeyjeantet",
   "version": "0.0.1",
+  "preview": "true",
   "engines": {
     "vscode": "^1.58.0"
   },

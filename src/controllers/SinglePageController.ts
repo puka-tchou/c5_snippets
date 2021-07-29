@@ -14,7 +14,7 @@ export async function generateSinglePage(path: string) {
   const filePath = Path.join(path, realname).substring(1);
 
   const content = [
-    `<?php`,
+    `<?php\n`,
     `namespace Application\\Controller\\SinglePage;\n`,
     `use Concrete\\Core\\Page\\Controller\\PageController;\n`,
     `class ${singlePageControllerClass} extends PageController`,

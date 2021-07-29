@@ -64,6 +64,6 @@
   "Get theme path": {
     "prefix": "c5theme",
     "body": ["<?= \\$view->getThemePath() ?>"],
-    "description": "Include a file"
+    "description": "Get the theme path"
   }
 }

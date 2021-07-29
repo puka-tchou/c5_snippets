@@ -35,7 +35,6 @@ export async function generatePageType(path: string) {
   vscode.workspace.applyEdit(wsEdit);
   vscode.workspace.openTextDocument(filePath).then(
     (a: vscode.TextDocument) => {
-      a.save();
       vscode.window.showTextDocument(a);
     },
     (error: any) => {

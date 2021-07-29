@@ -52,6 +52,6 @@
       "'$3',",
       ");$0"
     ],
-    "description": "Format date"
+    "description": "Add a new asset"
   }
 }

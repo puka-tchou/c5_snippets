@@ -14,7 +14,7 @@ export async function generatePageType(path: string) {
   const filePath = Path.join(path, realname).substring(1);
 
   const content = [
-    `<?php`,
+    `<?php\n`,
     `namespace Application\\Controller\\PageType;\n`,
     `use Concrete\\Core\\Page\\Controller\\PageTypeController;\n`,
     `class ${singlePageControllerClass} extends PageTypeController`,

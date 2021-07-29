@@ -41,5 +41,17 @@
     "prefix": "c5customdate",
     "body": ["\\$dh->formatCustom('j F Y', $1);$0"],
     "description": "Format date"
+  },
+
+  "Asset register": {
+    "prefix": "c5assetRegister",
+    "body": [
+      "\\$assetList->register(",
+      "'${1|css,javascript|}',",
+      "'$2',",
+      "'$3',",
+      ");$0"
+    ],
+    "description": "Format date"
   }
 }

@@ -2,7 +2,7 @@
   "name": "concrete5-snippets",
   "displayName": "Concrete5 snippets",
   "description": "Concrete5 snippets",
-  "publisher": "joeyjeantet",
+  "publisher": "c5snippets",
   "version": "0.0.1",
   "preview": true,
   "engines": {

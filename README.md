@@ -1,10 +1,24 @@
 # concrete5-snippets
 
-cette extension ajoute un certain nombre de snippets a vs code tout orienté pour concrete
+_Finally, Concrete5 snippets for VSCode!_
 
-il commence tous par : "c5"
+![a screenshot of the snippets](images/demo.png)
 
-à l'exception de "? =" et "? if" qui permette d'injecter du Php sur la page ou mettre en place une condition sur le HTML
+This extension adds a number of concrete5 snippets to VSCode. The snippets all start with **c5** and work as soon as VSCode detects that the language used is HTML or PHP.
 
-il est aussi possible de générer des contrôleurs de single page et page type en faisant clic droit sur les dossiers single page et page type dans contrôleur
+It is also possible to generate single page and page type controllers by right clicking on the folders public/application/controllers/single_page and public/application/controllers/page_types
 
+## Snippets
+
+| lang         | identifier        | description                    |
+| ------------ | ----------------- | ------------------------------ |
+| `html` `php` | `c5area`          | Create a new area              |
+| `html` `php` | `c5areaglobal`    | Create a new global area       |
+| `html` `php` | `c5translation`   | Create a new translation       |
+| `html` `php` | `c5getattribute`  | Get a page attribute           |
+| `php`        | `c5helper`        | Use a helper                   |
+| `php`        | `c5customdate`    | Format a date                  |
+| `php`        | `c5assetregister` | Register a new CSS or JS asset |
+| `html`       | `c5locale`        | Get the current locale         |
+| `html`       | `c5include`       | Include a file                 |
+| `html`       | `c5theme`         | Get the theme path             |

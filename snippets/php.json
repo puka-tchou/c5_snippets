@@ -43,7 +43,7 @@
     "description": "Format date"
   },
 
-  "Asset register": {
+  "asset register": {
     "prefix": "c5assetRegister",
     "body": [
       "\\$assetList->register(",

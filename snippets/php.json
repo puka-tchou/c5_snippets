@@ -10,7 +10,7 @@
   },
 
   "New Global area": {
-    "prefix": "c5areaglobal",
+    "prefix": "c5globalarea",
     "body": [
       "\\$${1:contenu} = new GlobalArea('${2:contenu}');",
       "\\$${1:contenu}->setAreaGridMaximumColumns(${3:12});",

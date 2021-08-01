@@ -12,11 +12,11 @@
   },
 
   "New Global area": {
-    "prefix": "c5areaglobal",
+    "prefix": "c5globalarea",
     "body": [
       "<?php",
       "\\$${1:contenu} = new GlobalArea('${2:contenu}');",
-      "\\$${1:contenu}->setAreaGridMaximumColumns(12});",
+      "\\$${1:contenu}->setAreaGridMaximumColumns(${3:12});",
       "\\$${1:contenu}->display(\\$c);",
       "?>"
     ],

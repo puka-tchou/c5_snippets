@@ -13,7 +13,7 @@ It is also possible to generate single page and page type controllers by right c
 | lang         | identifier        | description                    |
 | ------------ | ----------------- | ------------------------------ |
 | `html` `php` | `c5area`          | Create a new area              |
-| `html` `php` | `c5areaglobal`    | Create a new global area       |
+| `html` `php` | `c5globalarea`    | Create a new global area       |
 | `html` `php` | `c5translation`   | Create a new translation       |
 | `html` `php` | `c5getattribute`  | Get a page attribute           |
 | `php`        | `c5helper`        | Use a helper                   |

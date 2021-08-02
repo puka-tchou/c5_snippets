@@ -10,7 +10,7 @@
   },
 
   "New Global area": {
-    "prefix": "c5areaglobal",
+    "prefix": "c5globalarea",
     "body": [
       "\\$${1:contenu} = new GlobalArea('${2:contenu}');",
       "\\$${1:contenu}->setAreaGridMaximumColumns(${3:12});",
@@ -46,11 +46,7 @@
   "Register a new asset": {
     "prefix": "c5assetregister",
     "body": [
-      "\\$assetList->register(",
-      "'${1|css,javascript|}',",
-      "'$2',",
-      "'$3',",
-      ");$0"
+      "\\$assetList->register('${1|css,javascript|}', '${2:handle}', '${3:themes/path}', ${4:['local' => true, 'minify' => true, 'position' => Asset::ASSET_POSITION_FOOTER]});$0"
     ],
     "description": "Register a new CSS or JS asset"
   },

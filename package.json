@@ -3,7 +3,7 @@
   "displayName": "Concrete5 snippets",
   "description": "Concrete5 snippets",
   "publisher": "c5snippets",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "preview": true,
   "engines": {
     "vscode": "^1.58.0"

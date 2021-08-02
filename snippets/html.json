@@ -12,11 +12,11 @@
   },
 
   "New Global area": {
-    "prefix": "c5areaglobal",
+    "prefix": "c5globalarea",
     "body": [
       "<?php",
       "\\$${1:contenu} = new GlobalArea('${2:contenu}');",
-      "\\$${1:contenu}->setAreaGridMaximumColumns(12});",
+      "\\$${1:contenu}->setAreaGridMaximumColumns(${3:12});",
       "\\$${1:contenu}->display(\\$c);",
       "?>"
     ],
@@ -29,10 +29,10 @@
     "description": "Create a new translation"
   },
 
-  "Get attribute from page": {
+  "Get a page attribute": {
     "prefix": "c5getattribute",
-    "body": ["<?= \\$c->getAttribute('$1'); ?>$0"],
-    "description": "Get attribute from page"
+    "body": ["<?= \\$c->getAttribute('$1'${2:, 'display'}); ?>$0"],
+    "description": "Get a page attribute"
   },
 
   "Inject php value into html": {
@@ -47,12 +47,12 @@
     "description": "display html on php condition"
   },
 
-  "Concrete Active language": {
-    "prefix": "c5lang",
+  "Get the current locale": {
+    "prefix": "c5locale",
     "body": [
       "<?= \\Concrete\\Core\\Localization\\Localization::activeLanguage(); ?>"
     ],
-    "description": "Get the active language"
+    "description": "Get the current locale"
   },
 
   "New include": {
@@ -61,9 +61,9 @@
     "description": "Include a file"
   },
 
-  "Get theme path": {
+  "Get the theme path": {
     "prefix": "c5theme",
     "body": ["<?= \\$view->getThemePath() ?>"],
-    "description": "Include a file"
+    "description": "Get the theme path"
   }
 }

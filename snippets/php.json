@@ -25,21 +25,51 @@
     "description": "Create a new translation"
   },
 
-  "Get attribute from page": {
+  "Get a page attribute": {
     "prefix": "c5getattribute",
-    "body": ["${1|$this->c,$c|}->getAttribute('$2')$0"],
-    "description": "Get attribute from page"
+    "body": ["${1|$this->c,$c|}->getAttribute('$2'${3:, 'display'})$0"],
+    "description": "Get a page attribute"
   },
 
-  "helper date": {
+  "Helper": {
     "prefix": "c5helper",
-    "body": ["\\$dh = Core::make('helper/${1:text}');$0"],
-    "description": "Create a date helper"
+    "body": ["\\$dh = \\$app->make('helper/${1:text}');$0"],
+    "description": "Use a helper"
   },
 
-  "format date": {
+  "Format a date": {
     "prefix": "c5customdate",
     "body": ["\\$dh->formatCustom('j F Y', $1);$0"],
-    "description": "Format date"
+    "description": "Format a date"
+  },
+
+  "Register a new asset": {
+    "prefix": "c5assetregister",
+    "body": [
+      "\\$assetList->register('${1|css,javascript|}', '${2:handle}', '${3:themes/path}', ${4:['local' => true, 'minify' => true, 'position' => Asset::ASSET_POSITION_FOOTER]});$0"
+    ],
+    "description": "Register a new CSS or JS asset"
+  },
+
+  "Register a new asset group": {
+    "prefix": "c5assetregistergroup",
+    "body": [
+      "\\$assetList->registerGroup('${1:handle}', [",
+      "    ['${2|css,javascript|}', '${3:handle}']",
+      "]);"
+    ],
+    "description": "Register a new CSS or JS asset group"
+  },
+
+  "Require a new asset": {
+    "prefix": "c5assetrequire",
+    "body": ["\\$this->requireAsset('${1|css,javascript|}', '${2:handle}');"],
+    "description": "Require a new CSS or JS asset"
+  },
+
+  "Require a new asset group": {
+    "prefix": "c5assetrequiregroup",
+    "body": ["\\$this->requireAsset('${1:handle}');"],
+    "description": "Require a new CSS or JS asset group"
   }
 }

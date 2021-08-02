@@ -2,94 +2,104 @@
   "name": "concrete5-snippets",
   "displayName": "Concrete5 snippets",
   "description": "Concrete5 snippets",
-	"publisher": "joeyjeantet",
-	"version": "0.0.1",
-	"engines": {
-		"vscode": "^1.58.0"
-	},
-	"categories": [
-		"Other",
-		"Snippets"
-	],
-	"activationEvents": [
-		"*"
-	],
+  "publisher": "c5snippets",
+  "version": "0.0.2",
+  "preview": true,
+  "engines": {
+    "vscode": "^1.58.0"
+  },
+  "categories": [
+    "Other",
+    "Snippets"
+  ],
+  "activationEvents": [
+    "*"
+  ],
   "icon": "images/icon.png",
   "repository": {
-      "url": "https://github.com/pukafever/c5_snippets"
+    "url": "https://github.com/pukafever/c5_snippets"
   },
-	"main": "./out/extension.js",
-	"contributes": {
-		"commands": [
-			{
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
         "command": "c5helper.createSinglePageController",
         "title": "Ajouter un controleur de singlePage",
         "category": "C5Helper"
       },
-			{
-				"command": "c5helper.createPageTypeController",
-				"title": "Ajouter un controleur de pagetype",
-				"category": "C5Helper"
-			}
-		],
-		"snippets": [
-			{
-				"language": "php",
-				"path": "./snippets/php.json"
-			},
-			{
-				"language": "html",
-				"path": "./snippets/html.json"
-			}
-		],
-		"menus": {
-			"explorer/context": [
-			  {
-				"label": "C5 ",
-				"submenu": "C5",
-				"group": "C5"
-			  }
-			],
-			"C5": [
-			  {
-				"id": "C5.addViewController",
-				"when": "resourceFilename == single_page",
-				"command": "c5helper.createSinglePageController"
-			  },
-			  {
-				"id": "C5.addSingleController",
-				"when": "resourceFilename == page_types",
-				"command": "c5helper.createPageTypeController"
-			  }
-			]
-		  },
-		  "submenus": [
-			{
-			  "id": "C5",
-			  "label": "C5 | Generation de controleurs",
-			  "group": "C5"
-			}
-		  ]
-	},
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"pretest": "npm run compile && npm run lint",
-		"lint": "eslint src --ext ts",
-		"test": "node ./out/test/runTest.js"
-	},
-	"devDependencies": {
-		"@types/vscode": "^1.58.0",
-		"@types/glob": "^7.1.3",
-		"@types/mocha": "^8.2.2",
-		"@types/node": "14.x",
-		"eslint": "^7.27.0",
-		"@typescript-eslint/eslint-plugin": "^4.26.0",
-		"@typescript-eslint/parser": "^4.26.0",
-		"glob": "^7.1.7",
-		"mocha": "^8.4.0",
-		"typescript": "^4.3.2",
-		"vscode-test": "^1.5.2"
-	}
+      {
+        "command": "c5helper.createPageTypeController",
+        "title": "Ajouter un controleur de pagetype",
+        "category": "C5Helper"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "php",
+        "path": "./snippets/php.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/html.json"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "label": "C5 ",
+          "submenu": "C5",
+          "group": "C5"
+        }
+      ],
+      "C5": [
+        {
+          "id": "C5.addViewController",
+          "when": "resourceFilename == single_page",
+          "command": "c5helper.createSinglePageController"
+        },
+        {
+          "id": "C5.addSingleController",
+          "when": "resourceFilename == page_types",
+          "command": "c5helper.createPageTypeController"
+        }
+      ]
+    },
+    "submenus": [
+      {
+        "id": "C5",
+        "label": "C5 | Generation de controleurs",
+        "group": "C5"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "format": "prettier --write {src,snippets}/**/*",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@types/glob": "7.1.4",
+    "@types/mocha": "9.0.0",
+    "@types/node": "14.17.6",
+    "@types/vscode": "1.58.0",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "8.3.0",
+    "glob": "7.1.7",
+    "husky": "7.0.1",
+    "lint-staged": "11.1.1",
+    "mocha": "9.0.3",
+    "prettier": "2.3.2",
+    "typescript": "4.3.5",
+    "vscode-test": "1.6.1"
+  },
+  "lint-staged": {
+    "*.{ts,json,md}": "prettier --write"
+  }
 }

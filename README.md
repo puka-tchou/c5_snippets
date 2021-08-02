@@ -10,15 +10,18 @@ It is also possible to generate single page and page type controllers by right c
 
 ## Snippets
 
-| lang         | identifier        | description                    |
-| ------------ | ----------------- | ------------------------------ |
-| `html` `php` | `c5area`          | Create a new area              |
-| `html` `php` | `c5globalarea`    | Create a new global area       |
-| `html` `php` | `c5translation`   | Create a new translation       |
-| `html` `php` | `c5getattribute`  | Get a page attribute           |
-| `php`        | `c5helper`        | Use a helper                   |
-| `php`        | `c5customdate`    | Format a date                  |
-| `php`        | `c5assetregister` | Register a new CSS or JS asset |
-| `html`       | `c5locale`        | Get the current locale         |
-| `html`       | `c5include`       | Include a file                 |
-| `html`       | `c5theme`         | Get the theme path             |
+| lang         | identifier             | description                          |
+| ------------ | ---------------------- | ------------------------------------ |
+| `html` `php` | `c5area`               | Create a new area                    |
+| `html` `php` | `c5areaglobal`         | Create a new global area             |
+| `html` `php` | `c5translation`        | Create a new translation             |
+| `html` `php` | `c5getattribute`       | Get a page attribute                 |
+| `php`        | `c5helper`             | Use a helper                         |
+| `php`        | `c5customdate`         | Format a date                        |
+| `php`        | `c5assetregister`      | Register a new CSS or JS asset       |
+| `php`        | `c5assetregistergroup` | Register a new CSS or JS asset group |
+| `php`        | `c5assetrequire`       | Require a new CSS or JS asset        |
+| `php`        | `c5assetrequiregroup`  | Require a new CSS or JS asset group  |
+| `html`       | `c5locale`             | Get the current locale               |
+| `html`       | `c5include`            | Include a file                       |
+| `html`       | `c5theme`              | Get the theme path                   |

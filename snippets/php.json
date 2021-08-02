@@ -49,5 +49,27 @@
       "\\$assetList->register('${1|css,javascript|}', '${2:handle}', '${3:themes/path}', ${4:['local' => true, 'minify' => true, 'position' => Asset::ASSET_POSITION_FOOTER]});$0"
     ],
     "description": "Register a new CSS or JS asset"
+  },
+
+  "Register a new asset group": {
+    "prefix": "c5assetregistergroup",
+    "body": [
+      "\\$assetList->registerGroup('${1:handle}', [",
+      "    ['${2|css,javascript|}', '${3:handle}']",
+      "]);"
+    ],
+    "description": "Register a new CSS or JS asset group"
+  },
+
+  "Require a new asset": {
+    "prefix": "c5assetrequire",
+    "body": ["\\$this->requireAsset('${1|css,javascript|}', '${2:handle}');"],
+    "description": "Require a new CSS or JS asset"
+  },
+
+  "Require a new asset group": {
+    "prefix": "c5assetrequiregroup",
+    "body": ["\\$this->requireAsset('${1:handle}');"],
+    "description": "Require a new CSS or JS asset group"
   }
 }

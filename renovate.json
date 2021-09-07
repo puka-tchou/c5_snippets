@@ -4,7 +4,7 @@
   "prConcurrentLimit": 5,
   "prCreation": "not-pending",
   "reviewers": ["@pukafever"],
-  "schedule": ["every weekend"],
+  "schedule": ["before 3am on the first day of the month"],
   "vulnerabilityAlerts": {
     "labels": ["security"],
     "assignees": ["@pukafever"]

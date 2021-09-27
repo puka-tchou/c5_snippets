@@ -1,5 +1,9 @@
 # concrete5-snippets
 
+![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/c5snippets.concrete5-snippets?style=flat-square)
+![Concrete5](https://img.shields.io/badge/concrete5-8.5.5-informational?style=flat-square)
+![Depfu](https://img.shields.io/depfu/puka-tchou/c5_snippets?style=flat-square)
+
 _Finally, Concrete5 snippets for VSCode!_
 
 ![a screenshot of the snippets](images/demo.png)

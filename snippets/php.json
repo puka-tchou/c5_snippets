@@ -33,7 +33,7 @@
 
   "Helper": {
     "prefix": "c5helper",
-    "body": ["\\$dh = \\$app->make('helper/${1:text}');$0"],
+    "body": ["\\$${1:text}Helper = \\$app->make('helper/${1:text}');$0"],
     "description": "Use a helper"
   },
 

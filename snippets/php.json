@@ -46,7 +46,11 @@
   "Register a new asset": {
     "prefix": "c5assetregister",
     "body": [
-      "\\$assetList->register('${1|css,javascript|}', '${2:handle}', '${3:themes/path}', ${4:['local' => true, 'minify' => true, 'position' => Asset::ASSET_POSITION_FOOTER]});$0"
+      "\\$assetList->register('${1|css,javascript|}', '${2:handle}', '${3:themes/path}', [",
+      "    'local' => ${4|true,false|},",
+      "    'minify' => ${5|true,false|},",
+      "    'position' => ${6|Asset::ASSET_POSITION_FOOTER,Asset::ASSET_POSITION_HEADER|}",
+      "]);$0"
     ],
     "description": "Register a new CSS or JS asset"
   },

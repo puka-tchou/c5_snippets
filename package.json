@@ -91,7 +91,7 @@
     "@typescript-eslint/parser": "4.31.2",
     "eslint": "7.32.0",
     "eslint-config-prettier": "8.3.0",
-    "glob": "7.1.7",
+    "glob": "7.2.0",
     "husky": "7.0.2",
     "lint-staged": "11.1.2",
     "mocha": "9.1.2",

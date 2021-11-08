@@ -31,6 +31,14 @@
     "description": "Get a page attribute"
   },
 
+  "Get a site attribute": {
+    "prefix": "c5getsiteattribute",
+    "body": [
+      "${1|$this->c,$c|}->getSite()->getAttribute('$2'${3:, 'display'});$0"
+    ],
+    "description": "Get a site attribute"
+  },
+
   "Helper": {
     "prefix": "c5helper",
     "body": ["\\$${1:text}Helper = \\$app->make('helper/${1:text}');$0"],

@@ -35,6 +35,12 @@
     "description": "Get a page attribute"
   },
 
+  "Get a site attribute": {
+    "prefix": "c5getsiteattribute",
+    "body": ["<?= \\$c->getSite()->getAttribute('$1'${2:, 'display'}) ?>$0"],
+    "description": "Get a site attribute"
+  },
+
   "Inject php value into html": {
     "prefix": "?=",
     "body": ["<?= $1;?>$0"],

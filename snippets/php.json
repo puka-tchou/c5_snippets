@@ -21,33 +21,33 @@
 
   "New translation": {
     "prefix": "c5translate",
-    "body": ["t('$1')$0"],
+    "body": ["t('$1');"],
     "description": "Create a new translation"
   },
 
   "Get a page attribute": {
     "prefix": "c5getattribute",
-    "body": ["${1|$this->c,$c|}->getAttribute('$2'${3:, 'display'})$0"],
+    "body": ["${1|$this->c,$c|}->getAttribute('$2'${3:, 'display'});"],
     "description": "Get a page attribute"
   },
 
   "Get a site attribute": {
     "prefix": "c5getsiteattribute",
     "body": [
-      "${1|$this->c,$c|}->getSite()->getAttribute('$2'${3:, 'display'});$0"
+      "${1|$this->c,$c|}->getSite()->getAttribute('$2'${3:, 'display'});"
     ],
     "description": "Get a site attribute"
   },
 
   "Helper": {
     "prefix": "c5helper",
-    "body": ["\\$${1:text}Helper = \\$app->make('helper/${1:text}');$0"],
+    "body": ["\\$${1:text}Helper = \\$app->make('helper/${1:text}');"],
     "description": "Use a helper"
   },
 
   "Format a date": {
     "prefix": "c5customdate",
-    "body": ["\\$dh->formatCustom('j F Y', $1);$0"],
+    "body": ["\\$dh->formatCustom('j F Y', $1);"],
     "description": "Format a date"
   },
 
@@ -63,7 +63,7 @@
       "        'minify' => ${5|true,false|},",
       "        'position' => ${6|Asset::ASSET_POSITION_FOOTER,Asset::ASSET_POSITION_HEADER|}",
       "    ]",
-      ");$0"
+      ");"
     ],
     "description": "Register a new CSS or JS asset"
   },

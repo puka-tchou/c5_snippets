@@ -20,7 +20,7 @@
   },
 
   "New translation": {
-    "prefix": "c5translation",
+    "prefix": "c5translate",
     "body": ["t('$1')$0"],
     "description": "Create a new translation"
   },

@@ -83,5 +83,17 @@
     "prefix": "c5assetrequiregroup",
     "body": ["\\$this->requireAsset('${1:handle}');"],
     "description": "Require a new CSS or JS asset group"
+  },
+
+  "Get the current site ID": {
+    "prefix": "c5getsiteid",
+    "body": ["${1|$this->c,$c|}->getSiteTreeID();"],
+    "description": "Get the current site ID"
+  },
+
+  "Get the site name": {
+    "prefix": "c5getsitename",
+    "body": ["${1|$this->c,$c|}->getSite()->getSiteName();"],
+    "description": "Get the site name"
   }
 }

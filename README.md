@@ -32,3 +32,4 @@ It is also possible to generate single page and page type controllers by right c
 | `html`       | `c5locale`             | Get the current locale               |
 | `html`       | `c5include`            | Include a file                       |
 | `html`       | `c5theme`              | Get the theme path                   |
+| `html`       | `c5getpagewrapper`     | Get the page wrapper class           |

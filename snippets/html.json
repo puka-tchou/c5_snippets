@@ -83,5 +83,11 @@
     "prefix": "c5getsitename",
     "body": ["<?= \\$c->getSite()->getSiteName() ?>"],
     "description": "Get the site name"
+  },
+
+  "Get the page wrapper": {
+    "prefix": "c5getpagewrapper",
+    "body": ["<?= \\$c->getPageWrapperClass() ?>"],
+    "description": "Get the page wrapper class"
   }
 }

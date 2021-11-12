@@ -18,7 +18,7 @@ It is also possible to generate single page and page type controllers by right c
 | ------------ | ---------------------- | ------------------------------------ |
 | `html` `php` | `c5area`               | Create a new area                    |
 | `html` `php` | `c5areaglobal`         | Create a new global area             |
-| `html` `php` | `c5translation`        | Create a new translation             |
+| `html` `php` | `c5translate`          | Create a new translation             |
 | `html` `php` | `c5getattribute`       | Get a page attribute                 |
 | `html` `php` | `c5getsiteattribute`   | Get a site attribute                 |
 | `html` `php` | `c5getsiteid`          | Get the current site ID              |

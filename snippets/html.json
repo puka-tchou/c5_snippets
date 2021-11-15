@@ -24,7 +24,7 @@
   },
 
   "New translation": {
-    "prefix": "c5translation",
+    "prefix": "c5translate",
     "body": ["<?= t('$1'); ?>$0"],
     "description": "Create a new translation"
   },
@@ -33,6 +33,12 @@
     "prefix": "c5getattribute",
     "body": ["<?= \\$c->getAttribute('$1'${2:, 'display'}); ?>$0"],
     "description": "Get a page attribute"
+  },
+
+  "Get a site attribute": {
+    "prefix": "c5getsiteattribute",
+    "body": ["<?= \\$c->getSite()->getAttribute('$1'${2:, 'display'}) ?>$0"],
+    "description": "Get a site attribute"
   },
 
   "Inject php value into html": {
@@ -65,5 +71,23 @@
     "prefix": "c5theme",
     "body": ["<?= \\$view->getThemePath() ?>"],
     "description": "Get the theme path"
+  },
+
+  "Get the current site ID": {
+    "prefix": "c5getsiteid",
+    "body": ["<?= \\$c->getSiteTreeID() ?>"],
+    "description": "Get the current site ID"
+  },
+
+  "Get the site name": {
+    "prefix": "c5getsitename",
+    "body": ["<?= \\$c->getSite()->getSiteName() ?>"],
+    "description": "Get the site name"
+  },
+
+  "Get the page wrapper": {
+    "prefix": "c5getpagewrapper",
+    "body": ["<?= \\$c->getPageWrapperClass() ?>"],
+    "description": "Get the page wrapper class"
   }
 }

@@ -12,27 +12,11 @@
     "Other",
     "Snippets"
   ],
-  "activationEvents": [
-    "*"
-  ],
   "icon": "images/icon.png",
   "repository": {
     "url": "https://github.com/pukafever/c5_snippets"
   },
-  "main": "./out/extension.js",
   "contributes": {
-    "commands": [
-      {
-        "command": "c5helper.createSinglePageController",
-        "title": "Ajouter un controleur de singlePage",
-        "category": "C5Helper"
-      },
-      {
-        "command": "c5helper.createPageTypeController",
-        "title": "Ajouter un controleur de pagetype",
-        "category": "C5Helper"
-      }
-    ],
     "snippets": [
       {
         "language": "php",
@@ -41,34 +25,6 @@
       {
         "language": "html",
         "path": "./snippets/html.json"
-      }
-    ],
-    "menus": {
-      "explorer/context": [
-        {
-          "label": "C5 ",
-          "submenu": "C5",
-          "group": "C5"
-        }
-      ],
-      "C5": [
-        {
-          "id": "C5.addViewController",
-          "when": "resourceFilename == single_page",
-          "command": "c5helper.createSinglePageController"
-        },
-        {
-          "id": "C5.addSingleController",
-          "when": "resourceFilename == page_types",
-          "command": "c5helper.createPageTypeController"
-        }
-      ]
-    },
-    "submenus": [
-      {
-        "id": "C5",
-        "label": "C5 | Generation de controleurs",
-        "group": "C5"
       }
     ]
   },
@@ -83,21 +39,16 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@types/glob": "7.2.0",
-    "@types/mocha": "9.0.0",
     "@types/node": "14.17.6",
     "@types/vscode": "1.62.0",
     "@typescript-eslint/eslint-plugin": "5.2.0",
     "@typescript-eslint/parser": "5.2.0",
     "eslint": "8.2.0",
     "eslint-config-prettier": "8.3.0",
-    "glob": "7.2.0",
     "husky": "7.0.2",
     "lint-staged": "11.2.3",
-    "mocha": "9.1.3",
     "prettier": "2.4.1",
-    "typescript": "4.4.4",
-    "vscode-test": "1.6.1"
+    "typescript": "4.4.4"
   },
   "lint-staged": {
     "*.{ts,json,md}": "prettier --write"

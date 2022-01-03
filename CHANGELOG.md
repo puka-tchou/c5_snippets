@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## Unreleased
 
+### Features
+
+- New **`c5geturl`** HTML snippet [37c4c86](https://github.com/puka-tchou/c5_snippets/commit/37c4c8683d8dad2e4fa67253709b0210099db35c)
+
 ## Features
 
 - **`assetregister`, helper:** improve the indentation. [b6596dc](https://github.com/puka-tchou/c5_snippets/commit/b6596dc6a8f3a3fe659a459daff9bfb61b842eeb)

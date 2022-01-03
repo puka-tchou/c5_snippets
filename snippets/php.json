@@ -8,7 +8,6 @@
     ],
     "description": "Create a new area"
   },
-
   "New Global area": {
     "prefix": "c5globalarea",
     "body": [
@@ -18,19 +17,16 @@
     ],
     "description": "Create a new global area"
   },
-
   "New translation": {
     "prefix": "c5translate",
     "body": ["t('$1');"],
-    "description": "Create a new translation"
+    "description": "Translate a string of text"
   },
-
   "Get a page attribute": {
     "prefix": "c5getattribute",
     "body": ["${1|$this->c,$c|}->getAttribute('$2'${3:, 'display'});"],
     "description": "Get a page attribute"
   },
-
   "Get a site attribute": {
     "prefix": "c5getsiteattribute",
     "body": [
@@ -38,19 +34,27 @@
     ],
     "description": "Get a site attribute"
   },
+  "Get the current site ID": {
+    "prefix": "c5getsiteid",
+    "body": ["${1|$this->c,$c|}->getSiteTreeID();"],
+    "description": "Get the current site ID"
+  },
+  "Get the site name": {
+    "prefix": "c5getsitename",
+    "body": ["${1|$this->c,$c|}->getSite()->getSiteName();"],
+    "description": "Get the site name"
+  },
 
   "Helper": {
     "prefix": "c5helper",
     "body": ["\\$${1:text}Helper = \\$app->make('helper/${1:text}');"],
     "description": "Use a helper"
   },
-
   "Format a date": {
-    "prefix": "c5customdate",
-    "body": ["\\$dh->formatCustom('j F Y', $1);"],
+    "prefix": "c5date",
+    "body": ["\\$dateHelper->formatCustom('j F Y', $1);"],
     "description": "Format a date"
   },
-
   "Register a new asset": {
     "prefix": "c5assetregister",
     "body": [
@@ -67,7 +71,6 @@
     ],
     "description": "Register a new CSS or JS asset"
   },
-
   "Register a new asset group": {
     "prefix": "c5assetregistergroup",
     "body": [
@@ -80,28 +83,14 @@
     ],
     "description": "Register a new CSS or JS asset group"
   },
-
   "Require a new asset": {
     "prefix": "c5assetrequire",
     "body": ["\\$this->requireAsset('${1|css,javascript|}', '${2:handle}');"],
     "description": "Require a new CSS or JS asset"
   },
-
   "Require a new asset group": {
     "prefix": "c5assetrequiregroup",
     "body": ["\\$this->requireAsset('${1:handle}');"],
     "description": "Require a new CSS or JS asset group"
-  },
-
-  "Get the current site ID": {
-    "prefix": "c5getsiteid",
-    "body": ["${1|$this->c,$c|}->getSiteTreeID();"],
-    "description": "Get the current site ID"
-  },
-
-  "Get the site name": {
-    "prefix": "c5getsitename",
-    "body": ["${1|$this->c,$c|}->getSite()->getSiteName();"],
-    "description": "Get the site name"
   }
 }

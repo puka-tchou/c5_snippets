@@ -25,7 +25,7 @@ It is also possible to generate single page and page type controllers by right c
 | `html` `php` | `c5getsiteid`          | Get the current site ID              |
 | `html` `php` | `c5getsitename`        | Get the current site name            |
 | `php`        | `c5helper`             | Use a helper                         |
-| `php`        | `c5customdate`         | Format a date                        |
+| `php`        | `c5date`               | Format a date                        |
 | `php`        | `c5assetregister`      | Register a new CSS or JS asset       |
 | `php`        | `c5assetregistergroup` | Register a new CSS or JS asset group |
 | `php`        | `c5assetrequire`       | Require a new CSS or JS asset        |

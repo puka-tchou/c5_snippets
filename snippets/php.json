@@ -102,5 +102,12 @@
       "\\$pageLink = \\$navHelper->getLinkToCollection(${1:\\$page});"
     ],
     "description": "Get the link to a page as a string"
+  },
+  "Get the logout link": {
+    "prefix": "c5getlogoutlink",
+    "body": [
+      "\\$logout = \\Concrete\\Core\\Support\\Facade\\Url::to('/login', 'logout', \\$app->make('helper/validation/token')->generate('logout'));"
+    ],
+    "description": "Get the logout link as an Object"
   }
 }

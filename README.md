@@ -31,6 +31,7 @@ It is also possible to generate single page and page type controllers by right c
 | `php`        | `c5assetrequire`       | Require a new CSS or JS asset         |
 | `php`        | `c5assetrequiregroup`  | Require a new CSS or JS asset group   |
 | `php`        | `c5getlink`            | Get the link to a page as a string    |
+| `php`        | `c5getlogoutlink`      | Get the logout link as an Object      |
 | `html`       | `c5getlocale`          | Get the current locale                |
 | `html`       | `c5include`            | Include a file                        |
 | `html`       | `c5theme`              | Get the theme path                    |

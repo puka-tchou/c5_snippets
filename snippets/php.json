@@ -92,5 +92,15 @@
     "prefix": "c5assetrequiregroup",
     "body": ["\\$this->requireAsset('${1:handle}');"],
     "description": "Require a new CSS or JS asset group"
+  },
+  "Get the link to a page": {
+    "prefix": "c5getlink",
+    "body": [
+      "/** @var \\Concrete\\Core\\Html\\Service\\Navigation \\$navHelper */",
+      "\\$navHelper = \\$app->make('helper/navigation');",
+      "// Remember to use the Concrete\\Core\\Page\\Page object as a paremeter below",
+      "\\$pageLink = \\$navHelper->getLinkToCollection(${1:\\$page});"
+    ],
+    "description": "Get the link to a page as a string"
   }
 }

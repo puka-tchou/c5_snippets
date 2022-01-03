@@ -9,6 +9,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ### Features
 
 - New **`c5geturl`** HTML snippet [37c4c86](https://github.com/puka-tchou/c5_snippets/commit/37c4c8683d8dad2e4fa67253709b0210099db35c)
+- New **`c5getlink`** PHP snippet [cbae1c7](https://github.com/puka-tchou/c5_snippets/commit/cbae1c7726965a6ee83501608619575feb0d189a)
 
 ## Features
 

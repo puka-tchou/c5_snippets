@@ -6,6 +6,12 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## Unreleased
 
+### Features
+
+- New **`c5geturl`** HTML snippet [37c4c86](https://github.com/puka-tchou/c5_snippets/commit/37c4c8683d8dad2e4fa67253709b0210099db35c)
+- New **`c5getlink`** PHP snippet [cbae1c7](https://github.com/puka-tchou/c5_snippets/commit/cbae1c7726965a6ee83501608619575feb0d189a)
+- New **`c5getlogoutlink`** PHP snippet [357d3d7](https://github.com/puka-tchou/c5_snippets/commit/357d3d7a26c2869eace16421c84ec1b101590242)
+
 ## Features
 
 - **`assetregister`, helper:** improve the indentation. [b6596dc](https://github.com/puka-tchou/c5_snippets/commit/b6596dc6a8f3a3fe659a459daff9bfb61b842eeb)

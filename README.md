@@ -17,22 +17,25 @@ It is also possible to generate single page and page type controllers by right c
 
 ## Snippets
 
-| lang         | identifier             | description                          |
-| ------------ | ---------------------- | ------------------------------------ |
-| `html` `php` | `c5area`               | Create a new area                    |
-| `html` `php` | `c5areaglobal`         | Create a new global area             |
-| `html` `php` | `c5translate`          | Create a new translation             |
-| `html` `php` | `c5getattribute`       | Get a page attribute                 |
-| `html` `php` | `c5getsiteattribute`   | Get a site attribute                 |
-| `html` `php` | `c5getsiteid`          | Get the current site ID              |
-| `html` `php` | `c5getsitename`        | Get the current site name            |
-| `php`        | `c5helper`             | Use a helper                         |
-| `php`        | `c5customdate`         | Format a date                        |
-| `php`        | `c5assetregister`      | Register a new CSS or JS asset       |
-| `php`        | `c5assetregistergroup` | Register a new CSS or JS asset group |
-| `php`        | `c5assetrequire`       | Require a new CSS or JS asset        |
-| `php`        | `c5assetrequiregroup`  | Require a new CSS or JS asset group  |
-| `html`       | `c5locale`             | Get the current locale               |
-| `html`       | `c5include`            | Include a file                       |
-| `html`       | `c5theme`              | Get the theme path                   |
-| `html`       | `c5getpagewrapper`     | Get the page wrapper class           |
+| lang         | identifier             | description                           |
+| ------------ | ---------------------- | ------------------------------------- |
+| `html` `php` | `c5area`               | Create a new area                     |
+| `html` `php` | `c5globalarea`         | Create a new global area              |
+| `html` `php` | `c5translate`          | Translate a string of text            |
+| `html` `php` | `c5getattribute`       | Get a page attribute                  |
+| `html` `php` | `c5getsiteattribute`   | Get a site attribute                  |
+| `html` `php` | `c5getsiteid`          | Get the current site ID               |
+| `html` `php` | `c5getsitename`        | Get the current site name             |
+| `php`        | `c5helper`             | Use a helper                          |
+| `php`        | `c5date`               | Format a date                         |
+| `php`        | `c5assetregister`      | Register a new CSS or JS asset        |
+| `php`        | `c5assetregistergroup` | Register a new CSS or JS asset group  |
+| `php`        | `c5assetrequire`       | Require a new CSS or JS asset         |
+| `php`        | `c5assetrequiregroup`  | Require a new CSS or JS asset group   |
+| `php`        | `c5getlink`            | Get the link to a page as a string    |
+| `php`        | `c5getlogoutlink`      | Get the logout link as an Object      |
+| `html`       | `c5getlocale`          | Get the current locale                |
+| `html`       | `c5include`            | Include a file                        |
+| `html`       | `c5theme`              | Get the theme path                    |
+| `html`       | `c5getpagewrapper`     | Get the page wrapper class            |
+| `html`       | `c5geturl`             | Get the link to a page given its path |

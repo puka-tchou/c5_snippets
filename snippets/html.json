@@ -4,13 +4,12 @@
     "body": [
       "<?php",
       "\\$${1:contenu} = new Area('${2:contenu}');",
-      "\\$${1:contenu}->setAreaGridMaximumColumns(12);",
+      "\\$${1:contenu}->setAreaGridMaximumColumns(${3:12});",
       "\\$${1:contenu}->display(\\$c);",
       "?>"
     ],
     "description": "Create a new area"
   },
-
   "New Global area": {
     "prefix": "c5globalarea",
     "body": [
@@ -22,72 +21,57 @@
     ],
     "description": "Create a new global area"
   },
-
   "New translation": {
     "prefix": "c5translate",
-    "body": ["<?= t('$1'); ?>$0"],
-    "description": "Create a new translation"
+    "body": ["<?= t('$1') ?>$0"],
+    "description": "Translate a string of text"
   },
-
   "Get a page attribute": {
     "prefix": "c5getattribute",
-    "body": ["<?= \\$c->getAttribute('$1'${2:, 'display'}); ?>$0"],
+    "body": ["<?= \\$c->getAttribute('$1'${2:, 'display'}) ?>$0"],
     "description": "Get a page attribute"
   },
-
   "Get a site attribute": {
     "prefix": "c5getsiteattribute",
     "body": ["<?= \\$c->getSite()->getAttribute('$1'${2:, 'display'}) ?>$0"],
     "description": "Get a site attribute"
   },
-
-  "Inject php value into html": {
-    "prefix": "?=",
-    "body": ["<?= $1;?>$0"],
-    "description": "Inject php value into html"
-  },
-
-  "PHP test": {
-    "prefix": "?if",
-    "body": ["<?php if($1):?>", "$2", "<?php endif; ?>"],
-    "description": "display html on php condition"
-  },
-
-  "Get the current locale": {
-    "prefix": "c5locale",
-    "body": [
-      "<?= \\Concrete\\Core\\Localization\\Localization::activeLanguage(); ?>"
-    ],
-    "description": "Get the current locale"
-  },
-
-  "New include": {
-    "prefix": "c5include",
-    "body": ["<?php \\$view->inc('${1:includes/}') ?>"],
-    "description": "Include a file"
-  },
-
-  "Get the theme path": {
-    "prefix": "c5theme",
-    "body": ["<?= \\$view->getThemePath() ?>"],
-    "description": "Get the theme path"
-  },
-
   "Get the current site ID": {
     "prefix": "c5getsiteid",
     "body": ["<?= \\$c->getSiteTreeID() ?>"],
     "description": "Get the current site ID"
   },
-
   "Get the site name": {
     "prefix": "c5getsitename",
     "body": ["<?= \\$c->getSite()->getSiteName() ?>"],
     "description": "Get the site name"
   },
 
+  "Get the current locale": {
+    "prefix": "c5getlocale",
+    "body": [
+      "<?= \\Concrete\\Core\\Localization\\Localization::activeLanguage() ?>"
+    ],
+    "description": "Get the current locale"
+  },
+  "Include": {
+    "prefix": "c5include",
+    "body": ["<?php \\$view->inc('${1:includes/}') ?>"],
+    "description": "Include a file"
+  },
+  "Get the theme path": {
+    "prefix": "c5theme",
+    "body": ["<?= \\$view->getThemePath() ?>"],
+    "description": "Get the theme path"
+  },
   "Get the page wrapper": {
     "prefix": "c5getpagewrapper",
     "body": ["<?= \\$c->getPageWrapperClass() ?>"],
     "description": "Get the page wrapper class"
+  },
+  "Get the URL of a page": {
+    "prefix": "c5geturl",
+    "body": ["<?= URL::to('$1') ?>"],
+    "description": "Get the link to a page given its path"
   }
 }

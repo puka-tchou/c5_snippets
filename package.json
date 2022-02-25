@@ -3,7 +3,7 @@
   "displayName": "Concrete5 snippets",
   "description": "Concrete5 snippets",
   "publisher": "c5snippets",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "preview": true,
   "engines": {
     "vscode": "^1.62.0"
@@ -37,7 +37,7 @@
     "lint": "eslint src --ext ts",
     "test": "node ./out/test/runTest.js",
     "prepare": "husky install",
-    "release": "npm run pretest && standard-version"
+    "release": "npm run pretest && standard-version --skip.changelog"
   },
   "devDependencies": {
     "@types/node": "17.0.8",

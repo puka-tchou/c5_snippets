@@ -40,17 +40,17 @@
     "release": "npm run pretest && standard-version --skip.changelog"
   },
   "devDependencies": {
-    "@types/node": "18.0.3",
+    "@types/node": "18.7.14",
     "@types/vscode": "^1.62.0",
-    "@typescript-eslint/eslint-plugin": "5.31.0",
-    "@typescript-eslint/parser": "5.31.0",
-    "eslint": "8.21.0",
+    "@typescript-eslint/eslint-plugin": "5.36.2",
+    "@typescript-eslint/parser": "5.36.2",
+    "eslint": "8.23.1",
     "eslint-config-prettier": "8.5.0",
     "husky": "8.0.1",
     "lint-staged": "13.0.3",
     "prettier": "2.7.1",
     "standard-version": "^9.5.0",
-    "typescript": "4.7.4"
+    "typescript": "4.8.3"
   },
   "lint-staged": {
     "*.{ts,json,md}": "prettier --write"

@@ -29,10 +29,11 @@
     ]
   },
   "scripts": {
+    "check-types": "tsc --noEmit",
     "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
+    "compile": "npm run check-types && node esbuild.js --production",
     "format": "prettier --write {src,snippets}/**/*",
-    "watch": "tsc -watch -p ./",
+    "watch": "npm-run-all -p watch:*",
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src --ext ts",
     "test": "node ./out/test/runTest.js",
@@ -44,6 +45,7 @@
     "@types/vscode": "1.62.0",
     "@typescript-eslint/eslint-plugin": "8.51.0",
     "@typescript-eslint/parser": "8.51.0",
+    "esbuild": "^0.27.2",
     "eslint": "9.39.2",
     "eslint-config-prettier": "10.1.8",
     "husky": "9.1.7",

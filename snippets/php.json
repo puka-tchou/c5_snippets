@@ -109,5 +109,30 @@
       "\\$logout = \\Concrete\\Core\\Support\\Facade\\Url::to('/login', 'logout', \\$app->make('helper/validation/token')->generate('logout'));"
     ],
     "description": "Get the logout link as an Object"
+  },
+  "Get the collection ID": {
+    "prefix": "c5getcollectionid",
+    "body": ["${1|$this->c,$c|}-&gt;getCollectionID();"],
+    "description": "Get the collection ID"
+  },
+  "Get the collection name": {
+    "prefix": "c5getcollectionname",
+    "body": ["${1|$this->c,$c|}-&gt;getCollectionName();"],
+    "description": "Get the collection name"
+  },
+  "Get the collection description": {
+    "prefix": "c5getcollectiondescription",
+    "body": ["${1|$this->c,$c|}-&gt;getCollectionDescription();"],
+    "description": "Get the collection description"
+  },
+  "Get the collection path": {
+    "prefix": "c5getcollectionpath",
+    "body": ["${1|$this->c,$c|}-&gt;getCollectionPath();"],
+    "description": "Get the collection path"
+  },
+  "Get the collection link": {
+    "prefix": "c5getcollectionlink",
+    "body": ["${1|$this->c,$c|}-&gt;getCollectionLink();"],
+    "description": "Get the collection link"
   }
 }

@@ -1,42 +1,95 @@
-# Change Log
+# 📝 Changelog
 
-All notable changes to the "concrete5-helper" extension will be documented in this file.
+All notable changes to the concrete5-helper VS Code extension are documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+The format is based on [Keep a Changelog](https://keepachangelog.com/), and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## Unreleased
 
-### Features
+### ✨ Added
 
-- New **`c5geturl`** HTML snippet [37c4c86](https://github.com/puka-tchou/c5_snippets/commit/37c4c8683d8dad2e4fa67253709b0210099db35c)
-- New **`c5getlink`** PHP snippet [cbae1c7](https://github.com/puka-tchou/c5_snippets/commit/cbae1c7726965a6ee83501608619575feb0d189a)
-- New **`c5getlogoutlink`** PHP snippet [357d3d7](https://github.com/puka-tchou/c5_snippets/commit/357d3d7a26c2869eace16421c84ec1b101590242)
+- 🤖 Automated changelog generation with commitlint and standard-version
+- 📋 Commit message validation enforced by Git hooks
+- 📚 Comprehensive contributor guidelines (CONTRIBUTING.md)
+- 🎯 Quick reference guide for commit conventions (COMMIT_CONVENTION.md)
+- 📖 Technical documentation for automation system (CHANGELOG_AUTOMATION.md)
 
-## Features
+---
 
-- **`assetregister`, helper:** improve the indentation. [b6596dc](https://github.com/puka-tchou/c5_snippets/commit/b6596dc6a8f3a3fe659a459daff9bfb61b842eeb)
-- add `getsiteid`, `getsitename` snippets. [2626d93](https://github.com/puka-tchou/c5_snippets/commit/2626d9351171fa3d25e9f44832b2e1533afaf798)
-- add `getsiteattribute` snippet. [de417b2](https://github.com/puka-tchou/c5_snippets/commit/de417b2ffcb67305e5c5e83187ae9d39f7f5cc89)
-- add `getpagewrapper` snippet. [62e1198](https://github.com/puka-tchou/c5_snippets/commit/62e1198c5758d3727668159049c2aeb732778c7b)
+## [0.0.5](https://github.com/puka-tchou/c5_snippets/releases/tag/v0.0.5) — 2026-01-02
 
-## Bug fixes
+### 🔄 Changed
 
-- **`assetregister`:** split the array keys. [cc628f4](https://github.com/puka-tchou/c5_snippets/commit/cc628f4e73f493705a35b4981850782b824954d6)
-- **`helper`:** improve the naming of the variables. [965f974](https://github.com/puka-tchou/c5_snippets/commit/965f974d9afa44d098d0c3906e118d628481a88e)
-- **`c5translation`:** rename `c5translation` to `c5translate`. [52e7f5d](https://github.com/puka-tchou/c5_snippets/commit/52e7f5db7b946fe7a47a1d7e9ef8f7e9d98ed02d)
-- **`c5assetregister`, `c5assetregistergroup`**: updates the indentation. [8da3dc6](https://github.com/puka-tchou/c5_snippets/commit/8da3dc6e4336453646f74f8f1f92cba38b10f74b)
-- **php**: consistently use the `$0` and add missing `;`. [77a5698](https://github.com/puka-tchou/c5_snippets/commit/77a56986a2b616f08302e28475ceb44b8d2a792b)
+**Build & Tooling**
+- 🏗️ Switched build system from TypeScript compiler to esbuild — [e8f957f](https://github.com/puka-tchou/c5_snippets/commit/e8f957f)
+- 🔧 Build tooling with standard-version for automated changelog generation
 
-## [v0.0.2](https://github.com/puka-tchou/c5_snippets/releases/tag/v0.0.2)
+**Development Environment**
+- 🎨 Updated VS Code recommended extensions (added Prettier)
+- 🛠️ Code quality tools: Prettier and ESLint integration
 
-## Features
+**CI & Infrastructure**
+- 🤖 Updated GitHub Actions CI to use Node.js 25 and latest action versions
+- 🔍 Updated CodeQL analysis to v4 — [0bed5d4](https://github.com/puka-tchou/c5_snippets/commit/0bed5d4)
 
-- Add the `c5include` and `c5theme` snippets. [77259b2](https://github.com/puka-tchou/c5_snippets/commit/77259b29b0cdc13ef505a5d7df2a115848cca255)
-- Add the `c5assetregister` snippet. [ee8581b](https://github.com/puka-tchou/c5_snippets/commit/ee8581b17502cdf06fe54564560df3843f25b6a8)
-- Add the `c5assetregistergroup`, `c5assetrequire` and `c5assetrequiregroup` snippets. [bc00df8](https://github.com/puka-tchou/c5_snippets/commit/bc00df809ab03bc3eee8b28ae2bbb78eb0edc10d)
+**Dependencies**
+- 📦 Updated all npm dependencies
 
-## Bug fixes
+---
 
-- Correct the descriptions and identifiers of snippets. [95b692a](https://github.com/puka-tchou/c5_snippets/commit/95b692a540798f378632ffbf331fd5835fffbd17)
-- Change `c5areaglobal` to `globalarea`. [e942d02](https://github.com/puka-tchou/c5_snippets/commit/e942d023c9a87eb80970a570f652980896c275e0)
-- Correct the `c5assetregister` snippet. [d409332](https://github.com/puka-tchou/c5_snippets/commit/d409332df3fa97b17d9505f33e5da713884c0995)
+## [0.0.4](https://github.com/puka-tchou/c5_snippets/releases/tag/v0.0.4) — 2022-02-25
+
+### ✨ Added
+
+**Snippet Features**
+- 🔗 `c5getlink`, `c5getlogoutlink`, and `c5geturl` snippets for URL and link generation — [#90](https://github.com/puka-tchou/c5_snippets/pull/90)
+
+**Development Tools**
+- 🔧 Build tooling with standard-version for automated changelog generation — [7f0350c](https://github.com/puka-tchou/c5_snippets/commit/7f0350c)
+- ✅ CI checks to verify extension compilation — [#89](https://github.com/puka-tchou/c5_snippets/pull/89)
+
+---
+
+## [0.0.3](https://github.com/puka-tchou/c5_snippets/releases/tag/v0.0.3) — 2021-12-16
+
+### 🗑️ Removed
+
+- Controller creation functionality — [#81](https://github.com/puka-tchou/c5_snippets/pull/81)
+
+---
+
+## [0.0.2](https://github.com/puka-tchou/c5_snippets/releases/tag/v0.0.2) — 2021-08-02
+
+### ✨ Added
+
+- **📄 Core Snippets**
+  - `c5include` and `c5theme` snippets for template inclusion — [77259b2](https://github.com/puka-tchou/c5_snippets/commit/77259b2)
+  - `c5assetregister` snippet for asset registration — [ee8581b](https://github.com/puka-tchou/c5_snippets/commit/ee8581b)
+  - `c5assetregistergroup`, `c5assetrequire`, and `c5assetrequiregroup` snippets for asset management — [bc00df8](https://github.com/puka-tchou/c5_snippets/commit/bc00df8)
+
+- **⚙️ Helper Snippets**
+  - `getsiteid` and `getsitename` snippets for site information
+  - `getsiteattribute` snippet for retrieving site attributes
+  - `getpagewrapper` snippet for page wrapper access
+
+- **🎨 Project Setup**
+  - 🎯 Extension icon and publisher configuration — [5eb9106](https://github.com/puka-tchou/c5_snippets/commit/5eb9106)
+  - 🛠️ Code quality tools: Prettier and ESLint integration — [8f26405](https://github.com/puka-tchou/c5_snippets/commit/8f26405)
+
+### 🐛 Fixed
+
+**Code Quality & Naming**
+- ✅ Corrected snippet descriptions and identifiers — [95b692a](https://github.com/puka-tchou/c5_snippets/commit/95b692a)
+- 🏷️ Changed `c5areaglobal` to `globalarea` for proper naming
+- 🔤 Fixed `c5translation` snippet renamed to `c5translate`
+
+**Implementation & Configuration**
+- 🔧 Fixed `c5assetregister` snippet implementation — [#17](https://github.com/puka-tchou/c5_snippets/issues/17)
+- ⚙️ Updated asset registration options
+
+**Code Formatting & Structure**
+- 📐 Improved indentation in `assetregister` and helper snippets — [#58](https://github.com/puka-tchou/c5_snippets/pull/58)
+- 📐 Updated indentation in `c5assetregister` and `c5assetregistergroup`
+- ✂️ Split array keys in `assetregister` for better readability — [#30](https://github.com/puka-tchou/c5_snippets/issues/30)
+- 📝 Improved variable naming in helper snippets
+- ➕ Added missing semicolons and consistent use of `$0` placeholders in PHP snippets

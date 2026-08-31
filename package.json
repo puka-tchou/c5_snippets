@@ -38,9 +38,11 @@
     "lint": "eslint src --ext ts",
     "test": "node ./out/test/runTest.js",
     "prepare": "husky install",
-    "release": "npm run pretest && standard-version --skip.changelog"
+    "release": "npm run pretest && standard-version"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.3.0",
     "@eslint/eslintrc": "^3.3.3",
     "@eslint/js": "^9.39.2",
     "@types/node": "24.10.2",
